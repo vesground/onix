@@ -6,7 +6,7 @@
   "plugins": [
     ["@babel/plugin-transform-react-jsx"],
     ["babel-plugin-module-resolver", {
-      "root": ["./src", "./server"],
+      "root": ["./src"],
      }]
   ]
 }
