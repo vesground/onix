@@ -11,6 +11,9 @@
 # production
 # /build
 
+# components template
+# /src/components/Template
+
 # misc
 .DS_Store
 .env.local
