@@ -1,8 +1,8 @@
 export const profile = {
   firstName: 'Jean',
-  firstName: 'Gonzales',
+  lastName: 'Gonzales',
   position: 'Product Owner',
-  photoUrl: 'public/disruptive-employee.jpg',
+  photoUrl: 'public/images/disruptive-employee.jpg',
   tasksCount: {
     completed: 372,
     open: 11
@@ -12,22 +12,22 @@ export const profile = {
 export const events = [
   {
     type: 'mark',
-    title: '',
+    title: 'Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users',
     createdAt: Date.now(),
   },
   {
-    type: 'mark',
-    title: '',
+    type: 'comment',
+    title: 'Emilee Simchenko commented on Account for teams and personal in bottom style',
     meta: {
       target: {
-        title: ''
+        title: 'During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes'
       }
     },
     createdAt: Date.now(),
   },
   {
-    type: 'mark',
-    title: '',
+    type: 'upload',
+    title: 'Darika Samak uploaded 4 files on An option to search in current projects or in all projects',
     meta: {
       files: []
     },
