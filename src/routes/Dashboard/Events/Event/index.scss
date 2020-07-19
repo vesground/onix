@@ -3,11 +3,15 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
-  &__title {
-    width: 461px;
+  &__details {
+    // fill the remaining width
+    max-width: 551px;
     margin-left: 20px;
-    line-height: 20px;
-    color: var(--primary-text-color);
+    > .app-component-text {
+      width: 461px;
+      line-height: 20px;
+      color: var(--primary-text-color);
+    }
   }
   &__date {
     margin-left: auto;

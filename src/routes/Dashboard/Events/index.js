@@ -7,7 +7,7 @@ import { events } from 'data.js';
 import './index.scss';
 
 const baseClass = 'dashboard-events';
-const Events = (props) => {
+const DashboardEvents = (props) => {
   return (
     <div className={`${baseClass}`}>
       <Text className={`${baseClass}__relative-date`}>{Date.now()}</Text>
@@ -20,4 +20,4 @@ const Events = (props) => {
   );
 }
 
-export default Events;
+export default DashboardEvents;

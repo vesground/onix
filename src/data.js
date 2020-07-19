@@ -19,7 +19,8 @@ export const events = [
     type: 'comment',
     title: 'Emilee Simchenko commented on Account for teams and personal in bottom style',
     meta: {
-      target: {
+      type: 'comment',
+      content: {
         title: 'During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes'
       }
     },
@@ -29,7 +30,10 @@ export const events = [
     type: 'upload',
     title: 'Darika Samak uploaded 4 files on An option to search in current projects or in all projects',
     meta: {
-      files: []
+      type: 'files',
+      content: {
+        files: [1, 2, 3, 4]
+      }
     },
     createdAt: Date.now(),
   },

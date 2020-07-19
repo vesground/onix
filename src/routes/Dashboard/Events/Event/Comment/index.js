@@ -1,14 +1,16 @@
 import React from 'react';
 
+import Text from 'components/Text';
+
 import './index.scss';
 
-const baseClass = 'dashboard-header';
-const DashboardHeader = (props) => {
+const baseClass = 'dashboard-event-comment';
+const EventComment = ({ title, ...props }) => {
   return (
     <div className={`${baseClass}`}>
-      header
+      <Text>{title}</Text>
     </div>
   );
 }
 
-export default DashboardHeader;
+export default EventComment;
