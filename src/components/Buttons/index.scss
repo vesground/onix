@@ -1,0 +1,16 @@
+.app-component-button {
+  padding: 7px 15px;
+  border-radius: 24px;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  > .app-text {
+    font-size: var(--paragraph-2);
+    line-height: 19px;
+  }
+}

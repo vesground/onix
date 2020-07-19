@@ -8,7 +8,7 @@ const Text = ({
   children
 }) => {
   return (
-    <p className={classnames('app-text', { [className]: !!className })}>{children}</p>
+    <p className={classnames('app-component-text', { [className]: !!className })}>{children}</p>
   );
 }
 
