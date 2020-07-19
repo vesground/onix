@@ -1,0 +1,15 @@
+.dashboard-events {
+  width: 730px;
+  height: 591px;
+  padding: 35px 30px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  margin: 30px auto auto;
+  &__relative-date {
+    font-size: var(--paragraph-2);
+    color: var(--secondary-text-color);
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+
+}

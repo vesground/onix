@@ -1,14 +1,18 @@
 import React from 'react';
 
+import Image from 'components/Image';
+
 import './index.scss';
 
-const baseClass = 'dashboard-header';
-const DashboardHeader = (props) => {
+const baseClass = 'dashboard-header-details-members';
+const Members = (props) => {
   return (
     <div className={`${baseClass}`}>
-      header
+      <Image width={30} height={30} borderRadius='50%' />
+      <Image width={30} height={30} borderRadius='50%' />
+      <Image width={30} height={30} borderRadius='50%' />
     </div>
   );
 }
 
-export default DashboardHeader;
+export default Members;

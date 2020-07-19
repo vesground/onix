@@ -1,0 +1,18 @@
+.dashboard-event {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  &__title {
+    width: 461px;
+    margin-left: 20px;
+    line-height: 20px;
+    color: var(--primary-text-color);
+  }
+  &__date {
+    margin-left: auto;
+    line-height: 20px;
+    font-size: var(--paragraph-2);
+    color: var(--secondary-text-color);
+  }
+}

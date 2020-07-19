@@ -1,0 +1,12 @@
+.dashboard-header-details-actions {
+  display: flex;
+  align-items: center;
+  > .app-component-button:first-child {
+    margin-right: 15px;
+  }
+  > .app-component-button:last-child {
+    > .app-component-image {
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.dashboard-header-details-members {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  > .app-component-image:nth-child(2) {
+    margin: 0 5px;
+  }
+}

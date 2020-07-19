@@ -1,22 +1,29 @@
 import React from 'react';
 
-import './index.scss';
+import Text from 'components/Text';
+import Image from 'components/Image';
+import { More } from 'components/Buttons/index.js';
+import Members from 'routes/Dashboard/Header/Details/Members';
+import Actions from 'routes/Dashboard/Header/Details/Actions';
 
-const baseClass = 'dashboard-header';
-const DashboardHeader = (props) => {
+import './index.scss';
+// <img src='public/images/Shapes@2x.png' />
+
+const baseClass = 'dashboard-header-details';
+const HeaderDetails = (props) => {
   return (
     <div className={`${baseClass}`}>
       <div className={`${baseClass}__title`}>
-        photo
-        website redesign
-        more
+        <Image width={40} height={40} borderRadius='8px' />
+        <Text>Website Redesign</Text>
+        <More />
       </div>
       <div className={`${baseClass}__info`}>
-        members
-        actions
+        <Members />
+        <Actions />
       </div>
     </div>
   );
 }
 
-export default DashboardHeader;
+export default HeaderDetails;

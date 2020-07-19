@@ -1,0 +1,17 @@
+.dashboard-header-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &__title {
+    display: flex;
+    align-items: center;
+    > .app-component-text {
+      margin: 0 11px 0 15px;
+      font-size: var(--head-1);
+      line-height: 40px;
+    }
+  }
+  &__info {
+    display: flex;
+  }
+}
