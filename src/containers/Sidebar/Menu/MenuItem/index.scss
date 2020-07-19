@@ -1,0 +1,13 @@
+.app-sidebar-menu-item {
+  display: flex;
+  cursor: pointer;
+  padding: 16px 0;
+  > .app-component-text {
+    color: var(--highlight-text-color);
+  }
+  &__active {
+    > .app-component-text {
+      color: var(--secondary-text-color);
+    }
+  }
+}

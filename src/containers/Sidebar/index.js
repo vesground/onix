@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Text from 'components/Text';
+import Image from 'components/Image';
 import Profile from 'containers/Sidebar/Profile';
 import Menu from 'containers/Sidebar/Menu';
 
@@ -10,7 +11,11 @@ const baseClass = 'app-sidebar';
 const DashboardHeader = (props) => {
   return (
     <div className={`${baseClass}`}>
-      <Text>title</Text>
+      <div className={`${baseClass}__header`}>
+        <Image width={24} height={24} />
+        <Text>PROJECTUS</Text>
+        <Image width={16} height={16} />
+      </div>
       <Profile />
       <Menu />
     </div>
