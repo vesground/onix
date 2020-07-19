@@ -10,8 +10,13 @@
       margin-left: 13px;
       color: var(--highlight-text-color);
     }
-    > .app-component-image:last-child  {
+    &__search {
       margin-left: auto;
+      cursor: pointer;
+    }
+    &__sidebar {
+      margin-left: 5px;
+      cursor: pointer;
     }
   }
 }

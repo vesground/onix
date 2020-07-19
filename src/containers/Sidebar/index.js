@@ -14,7 +14,8 @@ const DashboardHeader = (props) => {
       <div className={`${baseClass}__header`}>
         <Image width={24} height={24} />
         <Text>PROJECTUS</Text>
-        <Image width={16} height={16} />
+        <Image className={`${baseClass}__header__search`} width={16} height={16} />
+        <Image className={`${baseClass}__header__sidebar`} width={16} height={16} />
       </div>
       <Profile />
       <Menu />
