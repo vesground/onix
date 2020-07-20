@@ -11,11 +11,13 @@ export const profile = {
 
 export const events = [
   {
+    id: 1,
     type: 'mark',
     title: 'Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users',
     createdAt: Date.now(),
   },
   {
+    id: 2,
     type: 'comment',
     title: 'Emilee Simchenko commented on Account for teams and personal in bottom style',
     meta: {
@@ -27,6 +29,7 @@ export const events = [
     createdAt: Date.now(),
   },
   {
+    id: 3,
     type: 'upload',
     title: 'Darika Samak uploaded 4 files on An option to search in current projects or in all projects',
     meta: {

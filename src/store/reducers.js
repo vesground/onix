@@ -12,7 +12,7 @@ function handleSidebarStatus(state, action) {
   switch (action.type) {
     case SET_SIDEBAR_VISIBILITY:
       return Object.assign({}, state, {
-        visibilityFilter: action.status
+        sidebarVisibility: action.status
       })
     default:
       return state

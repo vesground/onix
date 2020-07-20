@@ -9,7 +9,7 @@ const EventFiles = ({ files, ...props }) => {
   return (
     <div className={`${baseClass}`}>
       {files.map(file => (
-        <Image width={100} height={100} borderRadius='8px' />
+        <Image key={file} width={100} height={100} borderRadius='8px' />
       ))}
     </div>
   );

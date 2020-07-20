@@ -13,7 +13,7 @@ const DashboardEvents = (props) => {
       <Text className={`${baseClass}__relative-date`}>{Date.now()}</Text>
       {events && events.map(eventDetails => {
         return (
-          <Event {...eventDetails} />
+          <Event key={eventDetails.id} {...eventDetails} />
         )
       })}
     </div>

@@ -1,3 +1,19 @@
 .app {
   display: flex;
+  > .app-dashboard {
+  }
+  > .app-sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  &__open-sidebar {
+    > .app-dashboard {
+      margin-left: 70px;
+    }
+    > .app-sidebar {
+      position: absolute;
+      width: 270px;
+    }
+  }
 }
