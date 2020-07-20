@@ -1,3 +1,5 @@
+@import 'src/service/style/media.scss';
+
 .dashboard-header-details {
   display: flex;
   justify-content: space-between;
@@ -13,5 +15,12 @@
   }
   &__info {
     display: flex;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    &__info {
+      margin-top: 16px;
+    }
   }
 }

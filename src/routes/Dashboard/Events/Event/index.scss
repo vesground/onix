@@ -3,18 +3,21 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
+  > .app-component-image {
+    min-width: 40px;
+  }
   &__details {
     // fill the remaining width
-    max-width: 551px;
+    // max-width: 551px;
     margin-left: 20px;
     > .app-component-text {
-      width: 461px;
+      // width: 461px;
       line-height: 20px;
       color: var(--primary-text-color);
     }
   }
   &__date {
-    margin-left: auto;
+    margin-left: 5px;
     line-height: 20px;
     font-size: var(--paragraph-2);
     color: var(--secondary-text-color);

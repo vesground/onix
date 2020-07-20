@@ -1,10 +1,11 @@
+@import 'src/service/style/media.scss';
+
 .dashboard-events {
-  width: 730px;
-  height: 591px;
+  min-height: 591px;
   padding: 35px 30px;
   background: var(--primary-color);
   border-radius: 10px;
-  margin: 30px auto auto;
+  margin: 30px;
   &__relative-date {
     font-size: var(--paragraph-2);
     color: var(--secondary-text-color);
@@ -12,4 +13,12 @@
     margin-bottom: 32px;
   }
 
+  @media screen and (min-width: $breakpoint-md) {
+    margin: 30px auto auto;
+    width: 730px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 20px 15px;
+    margin: 10px;
+  }
 }

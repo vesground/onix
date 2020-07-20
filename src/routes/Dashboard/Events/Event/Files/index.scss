@@ -1,13 +1,10 @@
 .dashboard-event-files {
   display: flex;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  position: relative;
+  left: -10px;
   > .app-component-image {
-    margin: 0 10px;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
+    margin: 10px 10px 0;
   }
 }

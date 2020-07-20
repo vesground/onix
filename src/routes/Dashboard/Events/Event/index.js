@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import Image from 'components/Image';
 import Text from 'components/Text';
@@ -10,11 +11,13 @@ import './index.scss';
 const META_COMPONENTS = {
   comment: EventComment,
   files: EventFiles,
-}
+};
 
 const baseClass = 'dashboard-event';
 const DashboardEvent = ({ type, title, meta, createdAt, ...props }) => {
   const MetaComponent = META_COMPONENTS[meta?.type];
+
+  const time = moment.unix(createdAt).format("HH:mm");
 
   return (
     <div className={`${baseClass}`}>
@@ -23,7 +26,7 @@ const DashboardEvent = ({ type, title, meta, createdAt, ...props }) => {
         <Text>{title}</Text>
         {MetaComponent && (<MetaComponent {...meta.content} />)}
       </div>
-      <Text className={`${baseClass}__date`}>{createdAt}</Text>
+      <Text className={`${baseClass}__date`}>{time}</Text>
     </div>
   );
 }
