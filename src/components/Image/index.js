@@ -12,7 +12,7 @@ const Image = ({
   ...props
 }) => {
   return (
-    <div style={{ width, height, borderRadius }} className={classnames(baseClass, { [className]: !!className })} {...props} />
+    <div style={{ minWidth: width, minHeight: height, borderRadius }} className={classnames(baseClass, { [className]: !!className })} {...props} />
   );
 }
 

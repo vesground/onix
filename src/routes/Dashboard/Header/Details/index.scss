@@ -23,4 +23,15 @@
       margin-top: 16px;
     }
   }
+  @media screen and (max-width: $breakpoint-xs) {
+    &__info {
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+    &__title {
+      > .app-component-text {
+        font-size: var(--head-2);
+      }
+    }
+  }
 }

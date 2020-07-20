@@ -1,4 +1,35 @@
+@import 'src/service/style/media.scss';
+
 .dashboard-header {
   padding: 40px 30px 0 30px;
   background: var(--primary-color);
+
+  @media screen and (min-width: $breakpoint-xs+1) and (max-width: $breakpoint-sm) {
+    > .app-component-tabs {
+      position: relative;
+      left: -20px;
+      > .app-component-tab {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 40px 10px 0 10px;
+    > .app-component-tabs {
+      justify-content: space-between;
+      > .app-component-tab {
+        margin: 0 auto;
+        > .app-component-text {
+          font-size: var(--paragraph-2);
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

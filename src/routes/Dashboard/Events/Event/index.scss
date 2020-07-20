@@ -1,3 +1,5 @@
+@import 'src/service/style/media.scss';
+
 .dashboard-event {
   width: 100%;
   display: flex;
@@ -7,11 +9,8 @@
     min-width: 40px;
   }
   &__details {
-    // fill the remaining width
-    // max-width: 551px;
     margin-left: 20px;
     > .app-component-text {
-      // width: 461px;
       line-height: 20px;
       color: var(--primary-text-color);
     }
@@ -21,5 +20,16 @@
     line-height: 20px;
     font-size: var(--paragraph-2);
     color: var(--secondary-text-color);
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    &__details {
+      > .app-component-text {
+        font-size: var(--paragraph-2);
+      }
+    }
+    &__date {
+      font-size: var(--paragraph-3);
+    }
   }
 }
