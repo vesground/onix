@@ -6,13 +6,13 @@ import './index.scss';
 
 const baseClass = 'app-component-tabs';
 const Tabs = ({ activeTab, tabs, setActiveTab, ...props }) => {
-  const handleTabClick = (tabKey) => {
+  const handleTabClick = (tabKey) => () => {
     setActiveTab(tabKey);
   }
   return (
     <div className={`${baseClass}`}>
       {tabs.map(([key, options]) => (
-        <Tab isActive={key === activeTab} key={key} title={options.title} handleClick={handleTabClick} />
+        <Tab isActive={key === activeTab} key={key} title={options.title} handleClick={handleTabClick(key)} />
       ))}
     </div>
   );

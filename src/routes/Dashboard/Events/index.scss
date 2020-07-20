@@ -14,11 +14,16 @@
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    margin: 30px auto 30px;
+    margin: 166px auto 30px;
     width: 730px;
   }
+
+  @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-md) {
+    margin-top: 214px;
+  }
+
   @media screen and (max-width: $breakpoint-xs) {
     padding: 20px 15px;
-    margin: 10px;
+    margin: 197px 10px 10px;
   }
 }

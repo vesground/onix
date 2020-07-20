@@ -12,7 +12,7 @@ const DashboardHeader = ({ activeTab, setActiveTab, ...props}) => {
   return (
     <div className={`${baseClass}`}>
       <Details />
-      <Tabs activeTab={activeTab} tabs={TABS_LIST} />
+      <Tabs activeTab={activeTab} tabs={TABS_LIST} setActiveTab={setActiveTab} />
     </div>
   );
 }
