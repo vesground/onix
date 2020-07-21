@@ -7,6 +7,8 @@ import { events } from 'data.js';
 
 import './index.scss';
 
+const backgrounds = ['#cef9c6', '#fff8dd', '#e4efff']
+
 const baseClass = 'dashboard-events';
 const DashboardEvents = (props) => {
   const relativeDate = moment().calendar(null, {
@@ -21,9 +23,9 @@ const DashboardEvents = (props) => {
   return (
     <div className={`${baseClass}`}>
       <Text className={`${baseClass}__relative-date`}>{relativeDate}</Text>
-      {events && events.map(eventDetails => {
+      {events && events.map((eventDetails, index) => {
         return (
-          <Event key={eventDetails.id} {...eventDetails} />
+          <Event key={eventDetails.id} {...eventDetails} background={backgrounds[index]} />
         )
       })}
     </div>

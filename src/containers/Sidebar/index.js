@@ -22,10 +22,10 @@ const Sidebar = ({ isOpen, ...props }) => {
   return (
     <div className={classnames(baseClass, { [`${baseClass}-close`]: !isOpen })}>
       <div className={`${baseClass}__header`}>
-        <Image width={24} height={24} />
+        <Image width={24} height={24} background='transparent' src='public/images/Logo@3x.svg' />
         <Text>PROJECTUS</Text>
-        <Image className={`${baseClass}__header__search`} width={16} height={16} />
-        <Image className={`${baseClass}__header__sidebar`} width={16} height={16} onClick={toggleSidebar} />
+        <Image className={`${baseClass}__header__search`} width={16} height={16} background='transparent' src='public/images/Search@3x.svg' />
+        <Image className={`${baseClass}__header__sidebar`} width={16} height={16} background='transparent' src='public/images/close.svg' onClick={toggleSidebar} />
       </div>
       <Profile />
       <Menu />

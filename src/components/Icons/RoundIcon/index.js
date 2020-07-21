@@ -10,7 +10,7 @@ const RoundIcon = ({
   children
 }) => {
   return (
-    <div style={{ width, height, background }} className={`${baseClass}`}>
+    <div style={{ minWidth: width, minHeight: height, width, height, background }} className={`${baseClass}`}>
       {children}
     </div>
   );

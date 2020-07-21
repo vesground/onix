@@ -14,12 +14,14 @@ export const events = [
     id: 1,
     type: 'mark',
     title: 'Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users',
+    icon: 'public/images/Icon@3x.svg',
     createdAt: Date.now(),
   },
   {
     id: 2,
     type: 'comment',
     title: 'Emilee Simchenko commented on Account for teams and personal in bottom style',
+    icon: 'public/images/Icon@3x.svg',
     meta: {
       type: 'comment',
       content: {
@@ -32,6 +34,7 @@ export const events = [
     id: 3,
     type: 'upload',
     title: 'Darika Samak uploaded 4 files on An option to search in current projects or in all projects',
+    icon: 'public/images/Icon@3x.svg',
     meta: {
       type: 'files',
       content: {
