@@ -13,7 +13,7 @@ const DashboardHeader = (props) => {
   return (
     <div className={`${baseClass}`}>
       <div className={`${baseClass}__info`}>
-        <Image width={48} height={48} borderRadius='50%' />
+        <Image width={48} height={48} borderRadius='50%' src='public/images/disruptive-employee.jpg' />
         <div className={`${baseClass}__info__user`}>
           <Text>{profile.firstName} {profile.lastName}</Text>
           <Text>{profile.position}</Text>

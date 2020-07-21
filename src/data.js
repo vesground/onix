@@ -35,7 +35,12 @@ export const events = [
     meta: {
       type: 'files',
       content: {
-        files: [1, 2, 3, 4]
+        files: [
+          'public/images/city.jpg',
+          'public/images/basketball.jpg',
+          'public/images/nature.jpg',
+          'public/images/ice.jpeg',
+        ]
       }
     },
     createdAt: Date.now(),

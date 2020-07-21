@@ -26,7 +26,7 @@ const HeaderDetails = (props) => {
   return (
     <div className={`${baseClass}`}>
       <div className={`${baseClass}__title`}>
-        <Image width={40} height={40} borderRadius='8px' />
+        <Image width={40} height={40} borderRadius='8px' background='#ffc200' src='public/images/Shapes@2x.png' />
         <Text>Website Redesign</Text>
         <More handleClick={toggleSidebar} />
       </div>
