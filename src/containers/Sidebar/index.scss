@@ -2,7 +2,6 @@
 
 .app-sidebar {
   background: black;
-  min-width: 270px;
   position: fixed;
   z-index: 20;
   top: 0;
@@ -25,6 +24,10 @@
       margin-left: 5px;
       cursor: pointer;
     }
+  }
+
+  @media screen and (min-width: $breakpoint-sm+1) {
+    min-width: 270px;
   }
 
   @media screen and (max-width: $breakpoint-sm) {

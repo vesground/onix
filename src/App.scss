@@ -1,22 +1,36 @@
+@import 'src/service/style/media.scss';
+
 .app {
   display: flex;
 
   > .app-dashboard {
-    margin-left: 270px;
     > .dashboard-header {
-      left: 270px;
       right: 0;
+      left: 0;
     }
   }
+
   &__close-sidebar {
-    > .app-dashboard {
-      margin-left: 0;
-      > .dashboard-header {
-        left: 0;
-      }
-    }
     > .app-sidebar {
         display: none;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-sm+1) {
+    > .app-dashboard {
+      margin-left: 270px;
+      > .dashboard-header {
+        left: 270px;
+        right: 0;
+      }
+    }
+    &__close-sidebar {
+      > .app-dashboard {
+        margin-left: 0;
+        > .dashboard-header {
+          left: 0;
+        }
+      }
     }
   }
 }
