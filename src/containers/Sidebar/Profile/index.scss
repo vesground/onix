@@ -1,0 +1,33 @@
+.app-sidebar-profile {
+  &__info {
+    display: flex;
+    padding: 16px 20px 16px 30px;
+    background: var(--secondary-color);
+
+    &__user {
+      margin: auto auto auto 15px;
+      text-align: left;
+      > .app-component-text:first-child {
+        font-size: var(--paragraph-2);
+        line-height: 19px;
+        color: var(--highlight-text-color);
+        margin-bottom: 2px;
+      }
+      > .app-component-text:last-child {
+        font-size: var(--paragraph-3);
+        line-height: 17px;
+        color: var(--secondary-text-color);
+      }
+    }
+    > .app-icon-dots {
+      align-items: center;
+    }
+  }
+  &__tasks {
+    padding: 20px 20px 15px 30px;
+    display: flex;
+    > .app-sidebar-profile-tasks-counter:first-child {
+      margin-right: 20px;
+    }
+  }
+}

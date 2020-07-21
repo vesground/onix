@@ -1,0 +1,29 @@
+@import 'src/service/style/media.scss';
+
+.dashboard-events {
+  min-height: 591px;
+  max-width: 730px;
+  padding: 35px 30px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  margin: 30px;
+  &__relative-date {
+    font-size: var(--paragraph-2);
+    color: var(--secondary-text-color);
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-top: 166px;
+  }
+
+  @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-md) {
+    margin-top: 214px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 20px 15px;
+    margin: 197px 10px 10px;
+  }
+}

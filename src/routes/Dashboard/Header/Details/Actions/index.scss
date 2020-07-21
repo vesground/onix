@@ -1,0 +1,22 @@
+@import 'src/service/style/media.scss';
+
+.dashboard-header-details-actions {
+  display: flex;
+  align-items: center;
+  > .app-component-button:first-child {
+    margin-right: 15px;
+  }
+  > .app-component-button:last-child {
+    > .app-component-image {
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    > .app-component-button {
+      > .app-component-text {
+        font-size: var(--paragraph-2);
+      }
+    }
+  }
+}

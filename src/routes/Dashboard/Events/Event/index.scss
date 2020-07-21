@@ -1,0 +1,35 @@
+@import 'src/service/style/media.scss';
+
+.dashboard-event {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  > .app-component-image {
+    min-width: 40px;
+  }
+  &__details {
+    margin-left: 20px;
+    > .app-component-text {
+      line-height: 20px;
+      color: var(--primary-text-color);
+    }
+  }
+  &__date {
+    margin-left: 5px;
+    line-height: 20px;
+    font-size: var(--paragraph-2);
+    color: var(--secondary-text-color);
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    &__details {
+      > .app-component-text {
+        font-size: var(--paragraph-2);
+      }
+    }
+    &__date {
+      font-size: var(--paragraph-3);
+    }
+  }
+}

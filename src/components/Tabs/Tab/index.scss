@@ -1,0 +1,22 @@
+.app-component-tab {
+  margin: 0 32px;
+  padding-bottom: 14px;
+  display: inline-block;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  > .app-component-text {
+    color: var(--secondary-text-color);
+    line-height: 22px;
+    cursor: pointer;
+  }
+  &__active {
+    > .app-component-text {
+      color: var(--primary-text-color);
+    }
+    border-bottom: 2px solid #FFC200;
+  }
+}

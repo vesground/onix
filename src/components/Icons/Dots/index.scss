@@ -1,0 +1,7 @@
+.app-icon-dots {
+  cursor: pointer;
+  display: flex;
+  > .app-shapes-circle {
+    margin: 0 2px;
+  }
+}

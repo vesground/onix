@@ -1,0 +1,13 @@
+.app-sidebar-profile-tasks-counter {
+  text-align: left;
+  > .app-component-text:first-child {
+    font-size: var(--head-2);
+    line-height: 27px;
+    color: var(--highlight-text-color);
+  }
+  > .app-component-text:last-child {
+    font-size: var(--paragraph-3);
+    line-height: 17px;
+    color: var(--secondary-text-color);
+  }
+}

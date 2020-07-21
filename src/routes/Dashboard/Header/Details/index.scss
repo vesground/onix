@@ -1,0 +1,37 @@
+@import 'src/service/style/media.scss';
+
+.dashboard-header-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &__title {
+    display: flex;
+    align-items: center;
+    > .app-component-text {
+      margin: 0 11px 0 15px;
+      font-size: var(--head-1);
+      line-height: 40px;
+    }
+  }
+  &__info {
+    display: flex;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    &__info {
+      margin-top: 16px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    &__info {
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+    &__title {
+      > .app-component-text {
+        font-size: var(--head-2);
+      }
+    }
+  }
+}

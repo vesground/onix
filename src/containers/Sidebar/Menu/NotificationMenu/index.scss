@@ -1,0 +1,14 @@
+.app-sidebar-menu-item-notifications {
+  display: flex;
+  > .app-component-text {
+    color: var(--highlight-text-color);
+  }
+  > .app-icon-round-icon {
+    align-self: center;
+    margin-left: 10px;
+    > .app-component-text {
+      line-height: 18px;
+      color: var(--primary-text-color);
+    }
+  }
+}

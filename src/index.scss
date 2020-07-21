@@ -1,6 +1,20 @@
 body {
   margin: 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'HelveticaNeue', 'Helvetica', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #202020;
+  --primary-text-color: #131313;
+  --secondary-text-color: #595959;
+  --highlight-text-color: #fff;
+
+  --head-1: 32px;
+  --head-2: 20px;
+  --paragraph-1: 16px;
+  --paragraph-2: 14px;
+  --paragraph-3: 12px;
 }
