@@ -18,30 +18,19 @@ const Sidebar = ({ isOpen, ...props }) => {
     const action = setSidebarVisibility(newStatus);
     dispatch(action);
   };
-  console.log('is open', isOpen);
-  return (
-    <>
-      {isOpen ? (
-        <div className={classnames(baseClass, `${baseClass}-open`)}>
-          <Image width={16} height={16} className={`${baseClass}__toggle-sidebar`} onClick={toggleSidebar} />
-        </div>
-      ) : (
-        <div className={classnames(baseClass, `${baseClass}-close`)}>
-          <Image width={16} height={16} className={`${baseClass}__toggle-sidebar`} onClick={toggleSidebar} />
-        </div>
-      )}
-    </>
 
+  return (
+    <div className={classnames(baseClass, { [`${baseClass}-close`]: !isOpen })}>
+      <div className={`${baseClass}__header`}>
+        <Image width={24} height={24} />
+        <Text>PROJECTUS</Text>
+        <Image className={`${baseClass}__header__search`} width={16} height={16} />
+        <Image className={`${baseClass}__header__sidebar`} width={16} height={16} onClick={toggleSidebar} />
+      </div>
+      <Profile />
+      <Menu />
+    </div>
   );
 }
-
-// <div className={`${baseClass}__header`}>
-//   <Image width={24} height={24} />
-//   <Text>PROJECTUS</Text>
-//   <Image className={`${baseClass}__header__search`} width={16} height={16} />
-//   <Image className={`${baseClass}__header__sidebar`} width={16} height={16} onClick={toggleSidebar} />
-// </div>
-// <Profile />
-// <Menu />
 
 export default Sidebar;

@@ -1,19 +1,22 @@
 .app {
   display: flex;
+
   > .app-dashboard {
+    margin-left: 270px;
+    > .dashboard-header {
+      left: 270px;
+      right: 0;
+    }
   }
-  > .app-sidebar {
-    top: 0;
-    left: 0;
-    bottom: 0;
-  }
-  &__open-sidebar {
+  &__close-sidebar {
     > .app-dashboard {
-      margin-left: 70px;
+      margin-left: 0;
+      > .dashboard-header {
+        left: 0;
+      }
     }
     > .app-sidebar {
-      position: absolute;
-      width: 270px;
+        display: none;
     }
   }
 }

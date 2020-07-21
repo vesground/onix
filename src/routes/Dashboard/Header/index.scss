@@ -5,16 +5,20 @@
   background: var(--primary-color);
   position: fixed;
   z-index: 10;
-  width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 2px 16px rgba(52,52,52,0.08);
 
-  @media screen and (min-width: $breakpoint-xs+1) and (max-width: $breakpoint-sm) {
-    > .app-component-tabs {
-      position: relative;
-      left: -20px;
-      > .app-component-tab {
-        margin: 0 20px;
+  > .app-component-tabs {
+    max-width: 371px;
+    display: flex;
+    justify-content:space-between;
+    > .app-component-tab {
+      margin: 0 auto;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
@@ -22,17 +26,9 @@
   @media screen and (max-width: $breakpoint-xs) {
     padding: 40px 10px 0 10px;
     > .app-component-tabs {
-      justify-content: space-between;
       > .app-component-tab {
-        margin: 0 auto;
         > .app-component-text {
           font-size: var(--paragraph-2);
-        }
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
         }
       }
     }

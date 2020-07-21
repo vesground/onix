@@ -6,9 +6,9 @@ import RoundIcon from 'components/Icons/RoundIcon';
 import './index.scss';
 
 const baseClass = 'app-button-more';
-const More = (props) => {
+const More = ({ handleClick, ...props }) => {
   return (
-    <div className={baseClass}>
+    <div className={baseClass} onClick={handleClick}>
       <RoundIcon width={30} height={30} background='#EAEAEA'>
         <Dots />
       </RoundIcon>

@@ -1,34 +1,37 @@
+@import 'src/service/style/media.scss';
+
 .app-sidebar {
   background: black;
-  &__toggle-sidebar {
-    margin-left: auto;
-    cursor: pointer;
-  }
-}
-
-.app-sidebar-open {
   min-width: 270px;
-  // display: none;
-  // &__header {
-  //   display: flex;
-  //   align-items: center;
-  //   padding: 30px 20px 30px 30px;
-  //
-  //   > .app-component-text {
-  //     margin-left: 13px;
-  //     color: var(--highlight-text-color);
-  //   }
-  //   &__search {
-  //     margin-left: auto;
-  //     cursor: pointer;
-  //   }
-  //   &__sidebar {
-  //     margin-left: 5px;
-  //     cursor: pointer;
-  //   }
-  // }
-}
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
 
-.app-sidebar-close {
-  min-width: 70px;
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px 30px 30px;
+
+    > .app-component-text {
+      margin-left: 13px;
+      color: var(--highlight-text-color);
+    }
+    &__search {
+      margin-left: auto;
+      cursor: pointer;
+    }
+    &__sidebar {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+
+    left: 0;
+    right: 0;
+  }
 }
